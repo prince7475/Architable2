@@ -19,9 +19,15 @@ export default class SignedIn extends Component {
                 <Dropdown.Menu>
 
                   <Dropdown.Item 
+                  onClick={()=> {this.dropDownHander("Messages")}}
+                  >Messages (2)
+                  </Dropdown.Item>
+
+                  <Dropdown.Item 
                   onClick={()=> {this.dropDownHander("Account")}}
                   >Account
                   </Dropdown.Item>
+
 
                   <Dropdown.Item
                   onClick={()=> {this.dropDownHander("Settings")}}

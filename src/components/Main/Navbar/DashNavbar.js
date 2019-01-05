@@ -11,16 +11,15 @@ export default class DashNavbar extends Component {
   };
 
   render() {
-    const dropdown = false ? <SignedIn /> : <SignedOut />
+    const dropdown = true ? <SignedIn /> : <SignedOut />
     return (
-      <div className="Dashboard-content">
         <Menu inverted>
           <Menu.Item
           onClick={()=> {this.dropDownHander('Architable')}}
           >Architable</Menu.Item>
           {dropdown}
         </Menu>
-      </div>
+      
     );
   }
 }

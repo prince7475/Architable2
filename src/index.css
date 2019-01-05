@@ -13,6 +13,18 @@ code {
     monospace;
 }
 
-.Dashboard-content {
+.background {
   background-color: #323845;
+}
+
+.ui.inverted.menu {
+  background: #323845;
+}
+
+.ui.grid {
+  background: #323845;
+}
+
+.ui.segment:last-child {
+  background: #323845;
 }
