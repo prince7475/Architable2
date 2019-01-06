@@ -1,47 +1,127 @@
 import React, { Component } from "react";
-import { Button, Dropdown, Menu, Segment, Grid } from "semantic-ui-react";
-const options = [
-  { key: 1, text: "100", value: 100 },
-  { key: 2, text: "200", value: 200 },
-  { key: 3, text: "300", value: 300 },
-  { key: 4, text: "400", value: 400 },
-  { key: 5, text: "100", value: 100 },
-  { key: 6, text: "200", value: 200 },
-  { key: 7, text: "300", value: 300 },
-  { key: 8, text: "100", value: 100 },
-  { key: 9, text: "200", value: 200 },
-  { key: 10, text: "300", value: 300 },
-  { key: 11, text: "400", value: 400 },
-  { key: 12, text: "100", value: 100 },
-  { key: 13, text: "200", value: 200 },
-  { key: 14, text: "300", value: 300 },
-];
+import {
+  Button,
+  Dropdown,
+  Menu,
+  Segment,
+  Grid,
+  Checkbox
+} from "semantic-ui-react";
 
 export default class Filter extends Component {
+  // constructor() {
+  //   super();
+  //   this.state = {
+  //     postion: {
+
+  //     }
+  //   }
+  // }
+
+  state = { 
+    other : {
+      o : true
+    },
+    postion: {
+      ArchitecturalDesigner: true,
+      ArchitecturalCoordinator: false,
+      ArchitecturalProjectManager: false,
+      Architect: false,
+      Temporary: false
+      }
+  }
+
+  toggle = (str) => {
+    this.setState({ 
+      ...this.state,
+      postion: {
+        ...this.state.postion,
+        [str]: !this.state.postion[str]
+      }
+    })
+  }
+
   render() {
+    const ArchitecturalDesigner = "ArchitecturalDesigner (" +230 + ")"
+    const ArchitecturalCoordinator = "Architectural Coordinator (" + 120 + ")" 
+    const ArchitecturalProjectManager = "Architectural Project Manager (" + 137 + ")"
+    const Architect = "Architect (" + 104 + ")"
+    const Temporary = "Temporary (" + 84 + ")"
     return (
-      
-        <Grid columns="equal">
-          <Grid.Column width={16}>
-            
-              <Segment>
-                <Button>Hello</Button>
-                {/* <Dropdown
-                    search
-                    searchInput={{ type: "string" }}
-                    selection
-                    options={options}
-                    placeholder="Select amount..."
-                /> */}
-                <Button>Hello</Button>
-                <Button>Hello</Button>
-                <Button>Hello</Button>
-                <Button>Hello</Button>
-              </Segment>
-           
-          </Grid.Column>
-        </Grid>
-     
+      <Grid columns="equal">
+        <Grid.Column width={16}>
+
+          <Segment>
+
+            <Menu compact>
+              <Dropdown text='Position' simple item>
+                <Dropdown.Menu>
+
+                  <Dropdown.Item >
+                    <Checkbox label={ArchitecturalDesigner} onChange={()=>this.toggle('ArchitecturalDesigner')} checked={this.state.postion.ArchitecturalDesigner} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                  <Checkbox label={ArchitecturalCoordinator} onChange={()=>this.toggle('ArchitecturalCoordinator')} checked={this.state.postion.ArchitecturalCoordinator} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                  <Checkbox label={ArchitecturalProjectManager} onChange={()=>this.toggle('ArchitecturalProjectManager')} checked={this.state.postion.ArchitecturalProjectManager} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                    <Checkbox label={Architect} onChange={()=>this.toggle('Architect')} checked={this.state.postion.Architect} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                    <Checkbox label={Temporary} onChange={()=>this.toggle('Temporary')} checked={this.state.postion.Temporary} />
+                  </Dropdown.Item>
+
+                </Dropdown.Menu>
+              </Dropdown>
+            </Menu>
+
+
+            <Menu compact>
+              <Dropdown text='Location' simple item>
+                <Dropdown.Menu>
+
+                  <Dropdown.Item >
+                    <Checkbox label={ArchitecturalDesigner} onChange={()=>this.toggle('ArchitecturalDesigner')} checked={this.state.postion.ArchitecturalDesigner} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                  <Checkbox label={ArchitecturalCoordinator} onChange={()=>this.toggle('ArchitecturalCoordinator')} checked={this.state.postion.ArchitecturalCoordinator} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                  <Checkbox label={ArchitecturalProjectManager} onChange={()=>this.toggle('ArchitecturalProjectManager')} checked={this.state.postion.ArchitecturalProjectManager} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                    <Checkbox label={Architect} onChange={()=>this.toggle('Architect')} checked={this.state.postion.Architect} />
+                  </Dropdown.Item>
+
+                  <Dropdown.Item>
+                    <Checkbox label={Temporary} onChange={()=>this.toggle('Temporary')} checked={this.state.postion.Temporary} />
+                  </Dropdown.Item>
+
+                </Dropdown.Menu>
+              </Dropdown>
+            </Menu>
+
+            <Button>Salary Offer</Button>
+            <Button>Experience Level</Button>
+
+            <Button
+              basic
+              color="red"
+            >Clear Filter</Button>
+          </Segment>
+
+        </Grid.Column>
+      </Grid>
+
     );
   }
 }
