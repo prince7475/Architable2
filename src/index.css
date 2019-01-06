@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #323845;
 }
 
 code {
@@ -27,4 +28,8 @@ code {
 
 .ui.segment:last-child {
   background: #323845;
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  margin: 1% 1% 1% 1%;
 }
