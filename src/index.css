@@ -33,3 +33,19 @@ code {
 .ui.button, .ui.buttons .button, .ui.buttons .or {
   margin: 1% 1% 1% 1%;
 }
+
+.salaryOffers {
+  display: inline-block;
+}
+
+.salaryOfferInput {
+  margin-right: 2px;;
+  /* margin-top: px; */
+}
+.center {
+  text-align: center;
+}
+
+.allLocationFilter {
+  margin-right: 10px;
+}

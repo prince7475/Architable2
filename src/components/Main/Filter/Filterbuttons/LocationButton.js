@@ -24,6 +24,7 @@ render() {
     return (
 
         <Dropdown
+            className="allLocationFilter"
             value={this.state.current}
             search
             searchInput={{ type: 'string' }}

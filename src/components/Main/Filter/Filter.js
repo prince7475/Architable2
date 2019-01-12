@@ -9,6 +9,7 @@ import {
 } from "semantic-ui-react";
 import PostionButton from "./Filterbuttons/PostionButton";
 import LocationButton from "./Filterbuttons/LocationButton";
+import SalaryOfferButton from "./Filterbuttons/SalaryOfferButton";
 
 export default class Filter extends Component {
   state = { 
@@ -43,10 +44,10 @@ export default class Filter extends Component {
           <Segment>
           <PostionButton/>
           <LocationButton />
-            
+          <SalaryOfferButton />
             
 
-            <Button>Salary Offer</Button>
+
             <Button>Experience Level</Button>
 
             <Button

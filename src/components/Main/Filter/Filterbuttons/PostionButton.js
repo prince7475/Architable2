@@ -23,6 +23,7 @@ export default class PostionButton extends Component {
         [str]: !this.state.postion[str]
       }
     });
+    console.log(this.state)
   };
   render() {
     const ArchitecturalDesigner = "ArchitecturalDesigner (" + 230 + ")";
