@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Input } from 'semantic-ui-react';
+import { Input, Button, Dropdown } from 'semantic-ui-react';
 
 export default class SalaryOfferButton extends Component {
 
@@ -26,11 +26,21 @@ export default class SalaryOfferButton extends Component {
   }
 
   render() {
+    console.log(this.state)
     return (
-        <div className="salaryOffers">
-            <Input className="salaryOfferInput" name="min" onChange={this.minHandler} placeholder='Min' value={this.state.min} />
-            <Input className="salaryOfferInput" name="max" onChange={this.maxHandler} placeholder="Max" value={this.state.max}/>
-        </div>
+      <Button>
+      <Dropdown text="Salary Offer" simple item>
+        <Dropdown.Menu>
+          <Dropdown.Item>
+          <Input className="salaryOfferInput" name="min" onChange={this.minHandler} placeholder='Min' value={this.state.min} />
+          </Dropdown.Item>
+
+          <Dropdown.Item>
+          <Input className="salaryOfferInput" name="max" onChange={this.maxHandler} placeholder="Max" value={this.state.max}/>
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
+    </Button>
     )
   }
 }

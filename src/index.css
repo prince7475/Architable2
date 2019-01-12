@@ -16,6 +16,7 @@ code {
 
 .background {
   background-color: #323845;
+  margin: 0% 3% 0% 3%;
 }
 
 .ui.inverted.menu {
@@ -48,4 +49,25 @@ code {
 
 .allLocationFilter {
   margin-right: 10px;
+}
+
+.card-holder {
+  height: 100%;
+}
+
+.interviewer-title {
+  color : #4caaf6;
+}
+.interviewer-location {
+  color: #a3a9b5;
+  margin-top: -3%
+}
+.interview-location-salary {
+  color: #a3a9b5;
+  margin-top: -3%;
+}
+
+.interviewer-days {
+  color: #a3a9b5;
+  margin-top: 15%;
 }

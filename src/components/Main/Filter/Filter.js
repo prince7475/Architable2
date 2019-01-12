@@ -10,6 +10,7 @@ import {
 import PostionButton from "./Filterbuttons/PostionButton";
 import LocationButton from "./Filterbuttons/LocationButton";
 import SalaryOfferButton from "./Filterbuttons/SalaryOfferButton";
+import ExperienceLevel from "./Filterbuttons/ExperienceLevel";
 
 export default class Filter extends Component {
   state = { 
@@ -35,6 +36,11 @@ export default class Filter extends Component {
     })
   }
 
+  clearHandler = (e) => {
+    e.preventDefault();
+    console.log("clear button is clicked")
+  }
+
   render() {
 
     return (
@@ -48,12 +54,13 @@ export default class Filter extends Component {
             
 
 
-            <Button>Experience Level</Button>
+          <ExperienceLevel/>
 
             <Button
               basic
               color="red"
-            >Clear Filter</Button>
+              onClick={this.clearHandler}
+            >Default Filter</Button>
           </Segment>
 
         </Grid.Column>

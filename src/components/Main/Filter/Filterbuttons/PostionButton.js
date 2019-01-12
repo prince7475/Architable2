@@ -3,9 +3,6 @@ import { Button, Dropdown, Checkbox } from "semantic-ui-react";
 
 export default class PostionButton extends Component {
   state = {
-    other: {
-      o: true
-    },
     postion: {
       ArchitecturalDesigner: true,
       ArchitecturalCoordinator: false,
@@ -17,7 +14,6 @@ export default class PostionButton extends Component {
 
   toggle = str => {
     this.setState({
-      ...this.state,
       postion: {
         ...this.state.postion,
         [str]: !this.state.postion[str]
