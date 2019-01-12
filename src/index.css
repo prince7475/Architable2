@@ -6,6 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #323845;
 }
 
 code {
@@ -15,6 +16,7 @@ code {
 
 .background {
   background-color: #323845;
+  margin: 0% 3% 0% 3%;
 }
 
 .ui.inverted.menu {
@@ -27,4 +29,49 @@ code {
 
 .ui.segment:last-child {
   background: #323845;
+}
+
+.ui.button, .ui.buttons .button, .ui.buttons .or {
+  margin: 1% 1% 1% 1%;
+}
+
+.salaryOffers {
+  display: inline-block;
+}
+
+.salaryOfferInput {
+  margin-right: 2px;;
+  /* margin-top: px; */
+}
+.center {
+  text-align: center;
+}
+
+.allLocationFilter {
+  margin-right: 10px;
+}
+
+.card-holder {
+  height: 100%;
+}
+
+.interviewer-title {
+  color : #4caaf6;
+}
+.interviewer-location {
+  color: #a3a9b5;
+  margin-top: -3%
+}
+.interview-location-salary {
+  color: #a3a9b5;
+  margin-top: -3%;
+}
+
+.interviewer-days {
+  color: #a3a9b5;
+  margin-top: 15%;
+}
+
+.search-result-number {
+  color: #a3a9b5;
 }
