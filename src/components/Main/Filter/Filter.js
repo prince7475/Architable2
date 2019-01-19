@@ -51,9 +51,6 @@ export default class Filter extends Component {
           <PostionButton/>
           <LocationButton />
           <SalaryOfferButton />
-            
-
-
           <ExperienceLevel/>
 
             <Button

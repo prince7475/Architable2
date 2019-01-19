@@ -32,6 +32,7 @@ render() {
             options={options}
             placeholder='Location'
             onChange={this.handleChange}
+            noResultsMessage='Try another search.'
         >
         </Dropdown>
     

@@ -30,7 +30,12 @@ export default class PostionButton extends Component {
     const Temporary = "Temporary (" + 84 + ")";
     return (
       <Button>
-        <Dropdown text="Position" simple item>
+        <Dropdown 
+        text="Position" 
+        simple 
+        item
+      
+        >
           <Dropdown.Menu>
             <Dropdown.Item>
               <Checkbox
