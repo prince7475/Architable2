@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Grid } from 'semantic-ui-react';
 import InterViewCardsHolder from './CardHolder/InterViewCardsHolder';
+import InterviewDetails from './Details/InterviewDetails';
 
 export default class Dashboard extends Component {
   render() {
@@ -11,7 +12,7 @@ export default class Dashboard extends Component {
           <InterViewCardsHolder />
         </Grid.Column>
         <Grid.Column width={11}>
-          <p>Information</p>
+          <InterviewDetails/>
         </Grid.Column>
       </Grid.Row>
     </Grid>

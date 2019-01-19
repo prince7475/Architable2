@@ -51,8 +51,9 @@ code {
   margin-right: 10px;
 }
 
-.card-holder {
-  height: 700px;
+.overflow {
+  height: 1000px;
+  width: 100%;
   overflow:auto;
 }
 
@@ -82,4 +83,24 @@ code {
   color: #a3a9b5;
   margin-right: 5%;
   display: inline;
+}
+
+.white {
+  color: white;
+}
+
+.grey {
+  color: #a3a9b5;
+}
+
+.space-text-go-up-1-percent {
+  margin-top: -1%;
+}
+
+.details-text-space-top-10-percent {
+  margin-top: 10%;
+}
+
+.details-text-space-top-5-percent {
+  margin-top: 5%;
 }

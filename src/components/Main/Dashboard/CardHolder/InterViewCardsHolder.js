@@ -7,7 +7,7 @@ import Results from './Results';
 export default class InterViewCardsHolder extends Component {
   render() {
     return (
-        <Grid className="card-holder">
+        <Grid className="overflow">
             <Results />
         {/* <Visibility>             */}
             <InterViewCard />
