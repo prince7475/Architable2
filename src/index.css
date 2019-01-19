@@ -62,11 +62,11 @@ code {
 }
 .interviewer-location {
   color: #a3a9b5;
-  margin-top: -3%
+  margin-top: -5%
 }
 .interview-location-salary {
   color: #a3a9b5;
-  margin-top: -3%;
+  margin-top: -5%;
 }
 
 .interviewer-days {
@@ -103,4 +103,22 @@ code {
 
 .details-text-space-top-5-percent {
   margin-top: 5%;
+}
+
+.architable-logo {
+  width: 100%;
+  height: 100%;
+}
+
+.architable-logo-container {
+  width: 300px;
+  height: 80px;
+}
+
+.min-and-max-dropdown-text {
+  display: inline-block;
+}
+
+.margin-right-5-percent {
+  margin-right: 5%;
 }
