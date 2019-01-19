@@ -9,7 +9,6 @@ export default class InterViewCardsHolder extends Component {
     return (
         <Grid className="overflow">
             <Results />
-        {/* <Visibility>             */}
             <InterViewCard />
             <InterViewCard />
             <InterViewCard />
@@ -58,8 +57,6 @@ export default class InterViewCardsHolder extends Component {
             <InterViewCard />
             <InterViewCard />
             <InterViewCard />
-        {/* </Visibility> */}
-
         </Grid>
     
     )

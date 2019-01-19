@@ -106,7 +106,7 @@ export default class InterviewDetails extends Component {
               Dislike
             </Button>
             <Label as="a" basic pointing="left">
-              2,048
+              200
             </Label>
           </Button>
         </div>
