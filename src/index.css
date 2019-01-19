@@ -52,7 +52,7 @@ code {
 }
 
 .overflow {
-  height: 800px;
+  height: 1000px;
   width: 100%;
   overflow:auto;
 }

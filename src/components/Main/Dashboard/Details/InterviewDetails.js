@@ -4,7 +4,11 @@ import faker from "faker";
 export default class InterviewDetails extends Component {
   render() {
     return (
-      <Container text className="overflow ">
+
+      <div className="overflow ">
+
+      
+      <Container text >
         <Grid>
           <Grid.Row>
             <Grid.Column width={3}>
@@ -107,6 +111,7 @@ export default class InterviewDetails extends Component {
           </Button>
         </div>
       </Container>
+      </div>
     );
   }
 }
