@@ -6,10 +6,12 @@ import Dashboard from './Dashboard/Dashboard';
 export default class Main extends Component {
     render() {
     return (
-        <div className="background">
+        <div className="dashboard-holder">
+        <div className="dashboard-second-layer">
         <DashNavbar/>
         <Filter />
         <Dashboard />
+        </div>
         </div>
     )
 }
