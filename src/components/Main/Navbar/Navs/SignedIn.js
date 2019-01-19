@@ -14,6 +14,10 @@ export default class SignedIn extends Component {
       );
     return (
           <Menu.Menu position="right">
+          <Menu.Item>Add Story</Menu.Item>
+          <Menu.Item>Messages (2) </Menu.Item>
+          <Menu.Item>Settings</Menu.Item>
+          <Menu.Item>Profile</Menu.Item>
             <Menu.Item>
               <Dropdown trigger={trigger} icon={null}>
                 <Dropdown.Menu>
