@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Button, Form, Grid, Header, Message, Segment } from 'semantic-ui-react'
+import { Link } from "react-router-dom";
 export default class SignIn extends Component {
   state = {
     email: "",
@@ -32,9 +33,11 @@ export default class SignIn extends Component {
     `}</style>
         <Grid textAlign='center' style={{ height: '100%' }} verticalAlign='middle'>
           <Grid.Column style={{ maxWidth: 450 }}>
-            <Header as='h2' textAlign='center' >
-              Log-in to your account
-        </Header>
+            <Header textAlign='center' >
+              <h2 className="interviewer-title">
+                Log-in to your account
+            </h2>
+            </Header>
             <Form size='large'>
               <Segment stacked>
                 <Form.Input fluid icon='envelope' iconPosition='left' name="email" placeholder='E-mail address' value={this.state.email} onChange={this.onChangeHandler} />
@@ -55,7 +58,7 @@ export default class SignIn extends Component {
               </Segment>
             </Form>
             <Message>
-              New to us? <a href='#'>Sign Up</a>
+              New to us? <Link to='signup'> Sign Up </Link>
             </Message>
           </Grid.Column>
         </Grid>

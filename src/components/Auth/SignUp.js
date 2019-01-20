@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Grid, Header, Form, Segment, Button, Message, Checkbox, } from 'semantic-ui-react';
+import { Link } from "react-router-dom";
 export default class SignUp extends Component {
   state = {
     email: "",
@@ -18,7 +19,7 @@ export default class SignUp extends Component {
 
   checkBoxHandler = (e) => {
     this.setState({
-      anonymous : !this.state.anonymous
+      anonymous: !this.state.anonymous
     })
   }
 
@@ -77,7 +78,7 @@ export default class SignUp extends Component {
               </Segment>
             </Form>
             <Message>
-              Already a member ? <a href='#'>Log In</a>
+              Already a member ?  <Link to='signin'> Log In </Link>
             </Message>
           </Grid.Column>
         </Grid>
