@@ -49,10 +49,10 @@ export default class Filter extends Component {
 
           <Segment>
           <PostionButton/>
-          <LocationButton />
           <SalaryOfferButton />
           <ExperienceLevel/>
 
+          <LocationButton />
             <Button
               basic
               color="red"

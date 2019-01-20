@@ -6,57 +6,16 @@ import Results from './Results';
 
 export default class InterViewCardsHolder extends Component {
   render() {
+    const interviewList = []
+    for(let i = 0; i < 100; i ++){
+      interviewList.push(i);
+    }
     return (
         <Grid className="overflow">
             <Results />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
+            {
+              interviewList && interviewList.map( e => <InterViewCard key={e}/>)
+            }
         </Grid>
     
     )
