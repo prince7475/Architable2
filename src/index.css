@@ -29,10 +29,6 @@ code {
   background: #323845;
 }
 
-.ui.grid {
-  background: #323845;
-}
-
 .ui.segment:last-child {
   background: #323845;
 }
@@ -121,7 +117,7 @@ code {
   height: 80px;
 }
 
-.min-and-max-dropdown-text {
+.display-inline-block {
   display: inline-block;
 }
 
@@ -130,4 +126,14 @@ code {
 }
 .card-avatar-logo {
   margin-top: 50%;
+}
+
+body > div,
+      body > div > div,
+      body > div > div > div.login-form {
+        height: 100%;
+}
+
+.oauth-sign-up-form .ui.checkbox input.hidden+label {
+  color:white
 }
