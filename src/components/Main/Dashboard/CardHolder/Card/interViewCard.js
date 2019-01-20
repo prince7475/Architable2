@@ -16,11 +16,6 @@ render() {
         </Grid.Column>
 
         <Grid.Column width={5}>
-        {/* <Button as='div' labelPosition='right'>
-        <Button icon><Icon name='thumbs up outline' /></Button>
-            <Label as='a' basic pointing='left'>2,048</Label>
-        </Button>
-    <p className="interviewer-days">28 Days ago</p> */}
             <Label>
     <Icon name='thumbs up outline' /> 23
             </Label>
