@@ -34,7 +34,7 @@ export default class SalaryOfferButton extends Component {
           <Dropdown.Item>
           
               <div className="min-and-max-dropdown-text  margin-right-5-percent">
-              <h4 className="grey">Min: </h4>
+              <h4 className="grey">Min: $</h4>
               </div>
 
               <div className="min-and-max-dropdown-text  ">
@@ -47,7 +47,7 @@ export default class SalaryOfferButton extends Component {
           <Dropdown.Item>
 
             <div className="min-and-max-dropdown-text margin-right-5-percent">
-              <h4 className="grey"> Max: </h4>
+              <h4 className="grey"> Max: $</h4>
             </div>
 
             <div className="min-and-max-dropdown-text ">
