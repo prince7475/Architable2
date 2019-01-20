@@ -33,7 +33,7 @@ export default class ExperienceLevel extends Component {
                 placeholder="Min Years"
                 onChange={this.yearsHandler}
                 value={this.state.minYears}
-              />
+              /> - Years
             </div>
             </Dropdown.Item>
 
@@ -50,7 +50,7 @@ export default class ExperienceLevel extends Component {
                 placeholder="Max Years"
                 onChange={this.yearsHandler}
                 value={this.state.maxYears}
-              />
+              /> - Years
             </div>
             </Dropdown.Item>
           </Dropdown.Menu>
