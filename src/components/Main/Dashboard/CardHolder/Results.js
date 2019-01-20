@@ -12,9 +12,7 @@ export default class Results extends Component {
             <Sortby/>
         </Grid.Column>
         <Grid.Column width={6}>
-        
         <p className="search-result-number">49 search results</p>
-        
         </Grid.Column>
     </Grid.Row>
     )

@@ -6,60 +6,16 @@ import Results from './Results';
 
 export default class InterViewCardsHolder extends Component {
   render() {
+    const interviewList = []
+    for(let i = 0; i < 100; i ++){
+      interviewList.push(i);
+    }
     return (
-        <Grid className="card-holder">
+        <Grid className="overflow">
             <Results />
-        {/* <Visibility>             */}
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-            <InterViewCard />
-        {/* </Visibility> */}
-
+            {
+              interviewList && interviewList.map( e => <InterViewCard key={e}/>)
+            }
         </Grid>
     
     )

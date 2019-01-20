@@ -7,11 +7,13 @@ render() {
     return (
         <Grid.Row>
             <Grid.Column width={3}>
+            <div className="card-avatar-logo">
             <Image src={faker.internet.avatar()} circular/>
+            </div>
         </Grid.Column>
         <Grid.Column width={8}>
-            <h3 className='interviewer-title'>Software Engineer</h3>
-            <p className="interviewer-location">Dallas, Texas</p>
+            <h3 className='interviewer-title'>Architect</h3>
+            <p className="interviewer-location">{faker.address.city()}</p>
             <p className="interview-location-salary">30,000 - 50,000</p>
         </Grid.Column>
 
