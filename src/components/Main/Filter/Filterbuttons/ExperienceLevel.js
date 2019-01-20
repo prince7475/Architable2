@@ -22,35 +22,35 @@ export default class ExperienceLevel extends Component {
         <Dropdown text="Experience Level" simple item>
           <Dropdown.Menu>
             <Dropdown.Item>
-              <div className="min-and-max-dropdown-text  margin-right-5-percent">
+              <div className="display-inline-block  margin-right-5-percent">
                 <h4 className="grey">Min: </h4>
               </div>
 
-            <div className="min-and-max-dropdown-text ">
-              <Input
-                className="experienceLevelInput"
-                name="minYears"
-                placeholder="Min Years"
-                onChange={this.yearsHandler}
-                value={this.state.minYears}
-              /> - Years
+              <div className="display-inline-block ">
+                <Input
+                  className="experienceLevelInput"
+                  name="minYears"
+                  placeholder="Min Years"
+                  onChange={this.yearsHandler}
+                  value={this.state.minYears}
+                /> - Years
             </div>
             </Dropdown.Item>
 
             <Dropdown.Item>
 
-            <div className="min-and-max-dropdown-text  margin-right-5-percent">
-              <h4 className="grey">Min: </h4>
-            </div>
+              <div className="display-inline-block  margin-right-5-percent">
+                <h4 className="grey">Min: </h4>
+              </div>
 
-            <div className="min-and-max-dropdown-text ">
-              <Input
-                className="experienceLevelInput"
-                name="maxYears"
-                placeholder="Max Years"
-                onChange={this.yearsHandler}
-                value={this.state.maxYears}
-              /> - Years
+              <div className="display-inline-block ">
+                <Input
+                  className="experienceLevelInput"
+                  name="maxYears"
+                  placeholder="Max Years"
+                  onChange={this.yearsHandler}
+                  value={this.state.maxYears}
+                /> - Years
             </div>
             </Dropdown.Item>
           </Dropdown.Menu>

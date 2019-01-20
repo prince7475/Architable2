@@ -6,7 +6,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #323845;
+  /* background-color: #323845; */
 }
 
 code {
@@ -14,16 +14,18 @@ code {
     monospace;
 }
 
-.background {
+.dashboard-holder {
+  height: 100%;
+  width: 100%;
   background-color: #323845;
+
+}
+
+.dashboard-second-layer {
   margin: 0% 3% 0% 3%;
 }
 
 .ui.inverted.menu {
-  background: #323845;
-}
-
-.ui.grid {
   background: #323845;
 }
 
@@ -115,7 +117,7 @@ code {
   height: 80px;
 }
 
-.min-and-max-dropdown-text {
+.display-inline-block {
   display: inline-block;
 }
 
@@ -124,4 +126,14 @@ code {
 }
 .card-avatar-logo {
   margin-top: 50%;
+}
+
+body > div,
+      body > div > div,
+      body > div > div > div.login-form {
+        height: 100%;
+}
+
+.oauth-sign-up-form .ui.checkbox input.hidden+label {
+  color:white
 }
