@@ -19,7 +19,7 @@ export default class InterviewDetails extends Component {
                 Architectural Coordinator Interview
               </h2>
               <h4 className="white space-text-go-up-1-percent">
-                Melissa in Dallas, Texas
+                {faker.name.findName()} in Dallas, Texas
               </h4>
               <p className="grey space-text-go-up-1-percent">7 days ago</p>
             </Grid.Column>
