@@ -40,7 +40,7 @@ export default class SignIn extends Component {
         <Message>
           New to us? <a href='#'>Sign Up</a>
         </Message>
-      </Grid.Column>
+      </Grid.Column> 
     </Grid>
   </div>
     )
