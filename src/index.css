@@ -125,7 +125,7 @@ code {
   margin-right: 5%;
 }
 .card-avatar-logo {
-  margin-top: 50%;
+  margin-top: 15%;
 }
 
 body > div,
@@ -136,4 +136,22 @@ body > div,
 
 .oauth-sign-up-form .ui.checkbox input.hidden+label {
   color:white
+}
+
+.landing-page-top-page .ui.segment:last-child{
+  background: url("https://i.ibb.co/3kwFr85/Diversity-Image.jpg");
+  
+
+}
+
+.landing-page-top-page .ui.secondary.inverted.pointing.menu {
+  border-width: 0px;
+}
+
+.landing-page-top-page .ui.inverted.segment {
+  background: url("https://i.ibb.co/3kwFr85/Diversity-Image.jpg");
+}
+
+.landing-page-logo {
+  width: 300px;
 }

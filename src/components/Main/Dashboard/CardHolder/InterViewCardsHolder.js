@@ -1,6 +1,6 @@
 // @ts-nocheck
 import React, { Component } from 'react'
-import { Grid, Image, Visibility } from 'semantic-ui-react';
+import { Grid } from 'semantic-ui-react';
 import InterViewCard from './Card/interViewCard';
 import Results from './Results';
 
