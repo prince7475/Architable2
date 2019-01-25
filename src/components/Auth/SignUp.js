@@ -30,7 +30,8 @@ export default class SignUp extends Component {
       password: "",
       firstName: "",
       lastName: "",
-      confirmPassword: ""
+      confirmPassword: "",
+      anonymous: false
     })
   }
 
