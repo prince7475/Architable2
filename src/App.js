@@ -5,6 +5,7 @@ import SignIn from './components/Auth/SignIn';
 import SignUp from './components/Auth/SignUp';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import HomepageLayout from './components/Landing/LandingPage';
+import InterViewForm from './components/Form/InterViewForm';
 class App extends Component {
   render() {
     return (
@@ -15,6 +16,7 @@ class App extends Component {
             <Route exact path='/signin' component={SignIn} />
             <Route exact path='/signup' component={SignUp} />
             <Route exact path='/landingpage' component={HomepageLayout} />
+            <Route exact path='/interview' component={InterViewForm} />
           </Switch>
         </div>
       </BrowserRouter>
