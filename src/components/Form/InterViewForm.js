@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Header, Dropdown, Checkbox, Form } from 'semantic-ui-react'
+import { Container, Header, Dropdown, Checkbox, Form, Button, Image } from 'semantic-ui-react'
 const options = [
     { key: 'angular', text: 'Angular', value: 'angular' },
     { key: 'css', text: 'CSS', value: 'css' },
@@ -25,6 +25,13 @@ export default class InterViewForm extends Component {
     render() {
         return (
             <div>
+                <br/> 
+                <br />
+                <br/>
+                <br/> 
+                <br />
+                <br/>
+                
                 <Container text>
                     <Header as='h2'>Submit Your Interview Experience</Header>
                     <p>Think of an interview experience you have had in the past and contribute the insight you gained from it. The best interview experiences offer a valuable lesson about the interview process, regardless of receiving an offer.</p>
@@ -275,14 +282,71 @@ export default class InterViewForm extends Component {
                     <hr />
                     {/* What can someone learn from your experience? */}
                     <h3>What can someone learn from your experience?</h3>
-                    <p>Tell the story of the interview experience. How long did it last? How many people interviewed you? What were they looking for? What questions did they ask? What was the attire?</p>
+                    <p>Think about what makes this interview valuable to others.</p>
+                    <p>Suggestions: </p>
+                    <p>Before the interview was there something that would have made you more prepared?</p>
+                    <p>After the interview, if you were employed, how did you handle leaving your current employment?</p>
                     <Form>
                         <Form.TextArea />
                     </Form>
                     <hr />
 
 
+                    <hr />
+                    {/* Gender Identity (Optional)? */}
+                    <h3>Gender Identity (Optional)?</h3>
+                    <p>Demographic data is non-identifiable and will be implemented on your submission in a future update. If you want to know why we collect this data, please visit www.architable.com/data</p>
+                    <Dropdown
+                        selection
+                        options={options}
+                        search
+                    />
+                    <hr />
 
+
+                    <hr />
+                    {/* Race or Ethnicity (Optional) */}
+                    <h3>Race or Ethnicity (Optional)</h3>
+                    <p>(Select all that apply)
+                    Demographic data is non-identifiable and will be implemented on your submission in a future update. If you want to know why we collect this data, please visit www.architable.com/data</p>
+                    <Dropdown
+                        multiple
+                        selection
+                        options={options}
+                        search
+                    />
+                    <hr />
+
+
+
+                    <hr />
+                    {/* Approximate Age (Optional) */}
+                    <h3>Approximate Age (Optional)</h3>
+                    <p>Enter your age at the time of the interview.
+                    Demographic data is non-identifiable and will be implemented on your submission in a future update. If you want to know why we collect this data, please visit www.architable.com/data</p>
+                    <Dropdown
+                        selection
+                        options={options}
+                        search
+                    />
+                    <hr />
+
+
+                    <hr />
+                    {/* Email Address for Profile */}
+                    <h3>Email Address for Profile</h3>
+                    <p>If you give us your email address we will inform you of when you can make a profile on Architable and use this website to its fullest!</p>
+                    
+                    <Form>
+                        <Form.Field>
+                            <input placeholder='Email' />
+                        </Form.Field>
+                    </Form>
+                    <hr />
+
+
+
+                    <Button primary> Submit</Button>
 
                     <br />
                     <br />
