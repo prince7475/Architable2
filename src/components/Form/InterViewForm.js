@@ -214,6 +214,76 @@ export default class InterViewForm extends Component {
 
 
 
+
+                    <hr />
+                    {/* Qualifications */}
+                    <h3>Qualifications</h3>
+                    <p>Select all that apply.</p>
+                    <p>If you feel qualifications are missing and should be added, please email me at adam.architable@gmail.com</p>
+                    <Dropdown
+                        multiple
+                        selection
+                        options={options}
+                        search
+                    />
+                    <hr />
+
+
+                    <hr />
+                    {/* What actions did you take that led to the interview? */}
+                    <h3>What actions did you take that led to the interview?</h3>
+                    <p>Select all that apply.</p>
+                    <Dropdown
+                        multiple
+                        selection
+                        options={options}
+                        search
+                    />
+                    <hr />
+
+
+
+                    <hr />
+                    {/* Background Story */}
+                    <h3>Background Story</h3>
+                    <Form>
+                        <Form.TextArea placeholder='Tell the story of what led to getting the interview.' />
+                    </Form>
+                    <hr />
+
+
+                    <hr />
+                    {/* What did you bring to the interview? Was it useful? */}
+                    <h3>What did you bring to the interview? Was it useful?</h3>
+                    <Form>
+                        <Form.TextArea placeholder='Ex: Resume, Portfolio...' />
+                    </Form>
+                    <hr />
+
+
+                    <hr />
+                    {/* Experience During Interview */}
+                    <h3>Experience During Interview</h3>
+                    <p>Tell the story of the interview experience. How long did it last? How many people interviewed you? What were they looking for? What questions did they ask? What was the attire?</p>
+                    <Form>
+                        <Form.TextArea />
+                    </Form>
+                    <hr />
+
+
+                    
+                    <hr />
+                    {/* What can someone learn from your experience? */}
+                    <h3>What can someone learn from your experience?</h3>
+                    <p>Tell the story of the interview experience. How long did it last? How many people interviewed you? What were they looking for? What questions did they ask? What was the attire?</p>
+                    <Form>
+                        <Form.TextArea />
+                    </Form>
+                    <hr />
+
+
+
+
                     <br />
                     <br />
                     <br />
