@@ -54,7 +54,7 @@ code {
 }
 
 .overflow {
-  height: 75vh;
+  height: 70vh;
   /* width: 25vw; */
   overflow:auto;
 }
