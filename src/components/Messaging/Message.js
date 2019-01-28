@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 
-export default class SettingPage extends Component {
+export default class Message extends Component {
   render() {
     return (
       <div>
-        <p>User setting page</p>
+        <p>Messaging page</p>
       </div>
     )
   }

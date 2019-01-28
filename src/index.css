@@ -54,7 +54,7 @@ code {
 }
 
 .overflow {
-  height: 70vh;
+  height: 75vh;
   /* width: 25vw; */
   overflow:auto;
 }
@@ -113,8 +113,8 @@ code {
 }
 
 .architable-logo-container {
-  width: 300px;
-  height: 80px;
+  width: 230px;
+  height: 60px;
 }
 
 .display-inline-block {
@@ -154,4 +154,7 @@ body > div,
 
 .landing-page-logo {
   width: 300px;
+}
+.landing-page-btn-get-started a {
+  color: white;
 }
