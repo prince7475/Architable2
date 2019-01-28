@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Image, Menu, Dropdown } from 'semantic-ui-react';
+import {NavLink} from 'react-router-dom'
 import faker from "faker";
 export default class SignedIn extends Component {
 
@@ -14,17 +15,18 @@ export default class SignedIn extends Component {
       );
     return (
           <Menu.Menu position="right">
-          <Menu.Item>Add Story</Menu.Item>
-          <Menu.Item>Messages (2) </Menu.Item>
-          <Menu.Item>Settings</Menu.Item>
-          <Menu.Item>Profile</Menu.Item>
-            <Menu.Item>
+          <Menu.Item><NavLink to="/interview">Add Story </NavLink></Menu.Item>
+          <Menu.Item><NavLink to="/messages">Messages (2) </NavLink></Menu.Item>
+          <Menu.Item><NavLink to="/settings">Settings</NavLink></Menu.Item>
+          <Menu.Item><NavLink to="/account">Account</NavLink></Menu.Item>
+          <Menu.Item><NavLink to="/landingpage">Logout</NavLink></Menu.Item>
+            <Menu.Item><NavLink to="account">
               <Dropdown trigger={trigger} icon={null}>
                 <Dropdown.Menu>
 
-                  <Dropdown.Item 
+                  {/* <Dropdown.Item 
                   onClick={()=> {this.dropDownHander("Messages")}}
-                  >Messages (2)
+                  ><NavLink to="/messages">Messages (2)</NavLink>
                   </Dropdown.Item>
 
                   <Dropdown.Item 
@@ -39,11 +41,11 @@ export default class SignedIn extends Component {
 
                   <Dropdown.Item
                   onClick={()=> {this.dropDownHander("Sign Out")}}
-                  >Sign Out</Dropdown.Item>
+                  >Sign Out</Dropdown.Item> */}
 
                 </Dropdown.Menu>
               </Dropdown>
-            </Menu.Item>
+              </NavLink></Menu.Item>
           </Menu.Menu>
     )
   }

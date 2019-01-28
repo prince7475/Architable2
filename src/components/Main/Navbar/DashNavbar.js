@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import {NavLink} from 'react-router-dom'
 import {  
   Menu,
   Image 
@@ -12,13 +12,13 @@ export default class DashNavbar extends Component {
   };
 
   render() {
-    const dropdown = true ? <SignedIn /> : <SignedOut />
+    const dropdown = false ? <SignedIn /> : <SignedOut />
     return (
         <Menu inverted>
           <Menu.Item
           className="architable-logo-container"
           onClick={()=> {this.dropDownHander('Architable')}}
-          ><Image className="architable-logo" src="https://i.ibb.co/W5kDKsj/logo.png" alt="logo"/></Menu.Item>
+          ><NavLink to="/landingpage"><Image className="architable-logo" src="https://i.ibb.co/W5kDKsj/logo.png" alt="logo"/></NavLink></Menu.Item>
           {dropdown}
         </Menu>
       

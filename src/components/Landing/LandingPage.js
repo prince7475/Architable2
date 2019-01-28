@@ -16,7 +16,7 @@ import {
     Visibility,
     GridRow,
 } from 'semantic-ui-react'
-
+import {NavLink} from 'react-router-dom'
 // Heads up!
 // We using React Static to prerender our docs with server side rendering, this is a quite simple solution.
 // For more advanced usage please check Responsive docs under the "Usage" section.
@@ -59,8 +59,10 @@ const HomepageHeading = ({ mobile }) => (
                 <p>Sign up for Architable Insider and get early access to our web app, an email when we launch the full app in January, & bi-weekly updates for upcoming features.</p>
             </Header.Content>
         </Header>
-        <Button primary size='huge'>
+        <Button primary size='huge' className="landing-page-btn-get-started">
+        <NavLink to="/">
             Get Started
+        </NavLink>
       <Icon name='right arrow' />
         </Button>
     </Container>
@@ -112,12 +114,12 @@ class DesktopContainer extends Component {
                                 </Menu.Item>
 
                                 <Menu.Item position='right'>
-                                    <Button as='a' inverted={!fixed}>
+                                    <Button as='a' inverted={!fixed}><NavLink to="/signin">
                                         Log in
-                                </Button>
-                                    <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}>
+                                        </NavLink></Button>
+                                    <Button as='a' inverted={!fixed} primary={fixed} style={{ marginLeft: '0.5em' }}><NavLink to="/signup">
                                         Sign Up
-                                </Button>
+                                        </NavLink></Button>
                                 </Menu.Item>
                             </Container>
                         </Menu>
@@ -164,8 +166,8 @@ class MobileContainer extends Component {
                     <Menu.Item as='a' active>
                         Home
                 </Menu.Item>
-                    <Menu.Item as='a'>Log in</Menu.Item>
-                    <Menu.Item as='a'>Sign Up</Menu.Item>
+                <NavLink to="/signin"><Menu.Item as='a'>Log in</Menu.Item></NavLink>
+                <NavLink to="/signup"><Menu.Item as='a'>Sign Up</Menu.Item></NavLink>
                 </Sidebar>
 
                 <Sidebar.Pusher dimmed={sidebarOpened}>
@@ -181,11 +183,14 @@ class MobileContainer extends Component {
                                     <Icon name='sidebar' />
                                 </Menu.Item>
                                 <Menu.Item position='right'>
-                                    <Button as='a' inverted>
+                                
+                                <Button as='a' inverted><NavLink to="/signin">
                                         Log in
-                                </Button>
-                                    <Button as='a' inverted style={{ marginLeft: '0.5em' }}>
+                                        </NavLink></Button>
+                                    
+                                    <Button as='a' inverted style={{ marginLeft: '0.5em' }}><NavLink to="/signup">
                                         Sign Up
+                                    </NavLink>
                                 </Button>
                                 </Menu.Item>
                             </Menu>
@@ -256,7 +261,9 @@ const HomepageLayout = () => (
                 </Grid.Row>
                 <Grid.Row>
                     <Grid.Column textAlign='center'>
+                    <NavLink to="/interview">
                         <Button size='huge'>Submit Interview</Button>
+                    </NavLink>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
