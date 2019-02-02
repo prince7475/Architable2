@@ -1,6 +1,8 @@
+import { CREATE_PROJECT } from "../DifferentActionTypes";
+
 const initState = {
-    interviews : [
-         {
+    interviews: [
+        {
             "id": "rec0ciQXZXG4afcR6",
             "fields": {
                 "Experience": "No Experience",
@@ -47,7 +49,14 @@ const initState = {
     ]
 }
 
-const interviewReducer = (state = initState, action ) => {
+const interviewReducer = (state = initState, action) => {
+    switch (action.type) {
+        case CREATE_PROJECT:
+            console.log('created project', action.project)
+            break
+        default:
+            return state
+    }
     return state
 }
 

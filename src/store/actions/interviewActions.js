@@ -1,10 +1,10 @@
 import { CREATE_PROJECT } from "../DifferentActionTypes";
 
 
-export const createProject = (project) => {
+export const createInterview = (project) => {
     return (dispatch,getState) => {
         //make async call to database
 
-        dispatch({type: 'CREATE_PROJECT', project})
+        dispatch({type: CREATE_PROJECT, project})
     }
 }
