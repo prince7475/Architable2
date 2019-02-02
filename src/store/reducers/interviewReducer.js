@@ -1,5 +1,5 @@
 const initState = {
-    projects : [
+    interviews : [
          {
             "id": "rec0ciQXZXG4afcR6",
             "fields": {
@@ -47,8 +47,8 @@ const initState = {
     ]
 }
 
-const projectReducer = (state = initState, action ) => {
+const interviewReducer = (state = initState, action ) => {
     return state
 }
 
-export default projectReducer;
+export default interviewReducer;

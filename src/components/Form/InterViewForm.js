@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Container, Header, Dropdown, Checkbox, Form, Button, Image } from 'semantic-ui-react'
+import { Container, Header, Dropdown, Checkbox, Form, Button } from 'semantic-ui-react'
 const options = [
     { key: 'angular', text: 'Angular', value: 'angular' },
     { key: 'css', text: 'CSS', value: 'css' },
