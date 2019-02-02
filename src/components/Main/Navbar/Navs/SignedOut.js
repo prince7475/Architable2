@@ -5,12 +5,12 @@ export default class SignedOut extends Component {
   render() {
     return (
         <Menu.Menu position="right">
-            <Menu.Item>
-            <NavLink to="/signin">
+            <NavLink to="/signin"><Menu.Item>
+            
             Login / Sign up
-            </NavLink>
+            
                 
-            </Menu.Item>
+            </Menu.Item></NavLink>
         </Menu.Menu>
     )
   }

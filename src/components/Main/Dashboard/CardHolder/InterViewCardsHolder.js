@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import { Grid } from 'semantic-ui-react';
 import InterViewCard from './Card/interViewCard';
 import Results from './Results';
-
-export default class InterViewCardsHolder extends Component {
+class InterViewCardsHolder extends Component {
   render() {
+    const {projects} = this.props
     const interviewList = []
     for (let i = 0; i < 100; i++) {
       interviewList.push(i);
@@ -15,7 +15,7 @@ export default class InterViewCardsHolder extends Component {
         <Grid >
           <Results />
           {
-            interviewList && interviewList.map(e => <InterViewCard key={e} />)
+            projects && projects.map( (project,idx) => <InterViewCard key={idx} project={project}/>)
           }
         </Grid>
       </div>
@@ -23,3 +23,5 @@ export default class InterViewCardsHolder extends Component {
     )
   }
 }
+
+export default (InterViewCardsHolder)
