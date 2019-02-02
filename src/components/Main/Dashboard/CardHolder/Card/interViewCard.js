@@ -4,6 +4,8 @@ import faker from "faker";
 
 export default class InterViewCard extends Component {
     render() {
+        console.log("this is single",this.props.project)
+        const {project} = this.props
         return (
             <Grid.Row>
                 <Grid.Column width={3}>
@@ -12,9 +14,9 @@ export default class InterViewCard extends Component {
                     </div>
                 </Grid.Column>
                 <Grid.Column width={8}>
-                    <h3 className='interviewer-title'>Architect</h3>
-                    <p className="interviewer-location">{faker.address.city()}</p>
-                    <p className="interview-location-salary">30,000 - 50,000</p>
+                    <h3 className='interviewer-title'>{project.fields["Position"]}</h3>
+                    <p className="interviewer-location">{project.fields["City, State"]}</p>
+                    <p className="interview-location-salary">{project.fields["Salary Offered"]}</p>
                 </Grid.Column>
                 <Grid.Column width={5}>
                     <Label>
