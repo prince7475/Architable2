@@ -1,10 +1,19 @@
-import { CREATE_PROJECT } from "../DifferentActionTypes";
+import { CREATE_INTERVIEW, CREATE_INTERVIEW_ERROR } from "../DifferentActionTypes";
 
 
-export const createInterview = (project) => {
-    return (dispatch,getState) => {
+export const createInterview = (interview) => {
+    return (dispatch,getState, {getFirebase, getFirestore}) => {
         //make async call to database
+        const firestore = getFirestore();
 
-        dispatch({type: CREATE_PROJECT, project})
+        firestore.collect('Interviews').add({
+            ...interview,
+            createdAt: new Date()
+        }).then( () => {
+            dispatch({type: CREATE_INTERVIEW, interview})
+        }).catch((err) => {
+            dispatch({type: CREATE_INTERVIEW_ERROR, err})
+        })
+        
     }
 }

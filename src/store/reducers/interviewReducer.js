@@ -1,4 +1,4 @@
-import { CREATE_PROJECT } from "../DifferentActionTypes";
+import { CREATE_INTERVIEW, CREATE_INTERVIEW_ERROR } from "../DifferentActionTypes";
 
 const initState = {
     interviews: [
@@ -51,9 +51,11 @@ const initState = {
 
 const interviewReducer = (state = initState, action) => {
     switch (action.type) {
-        case CREATE_PROJECT:
-            console.log('created project', action.project)
+        case CREATE_INTERVIEW:
+            console.log('created project', action.interview)
             break
+        case CREATE_INTERVIEW_ERROR:
+            console.log('create project error', action.err)
         default:
             return state
     }
