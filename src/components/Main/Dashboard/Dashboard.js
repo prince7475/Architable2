@@ -22,7 +22,7 @@ class Dashboard extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    projects: state.project.projects
+    projects: state.interview.interviews
   }
 }
 

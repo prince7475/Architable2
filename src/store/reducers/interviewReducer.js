@@ -1,6 +1,8 @@
+import { CREATE_INTERVIEW, CREATE_INTERVIEW_ERROR } from "../DifferentActionTypes";
+
 const initState = {
-    projects : [
-         {
+    interviews: [
+        {
             "id": "rec0ciQXZXG4afcR6",
             "fields": {
                 "Experience": "No Experience",
@@ -47,8 +49,17 @@ const initState = {
     ]
 }
 
-const projectReducer = (state = initState, action ) => {
+const interviewReducer = (state = initState, action) => {
+    switch (action.type) {
+        case CREATE_INTERVIEW:
+            console.log('created project', action.interview)
+            break
+        case CREATE_INTERVIEW_ERROR:
+            console.log('create project error', action.err)
+        default:
+            return state
+    }
     return state
 }
 
-export default projectReducer;
+export default interviewReducer;
